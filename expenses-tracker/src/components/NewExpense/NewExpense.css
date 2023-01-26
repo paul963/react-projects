@@ -1,0 +1,44 @@
+.new-expense {
+    background-color: var(--dark);
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-expense button {
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--white);
+    border-radius: 12px;
+    margin-right: 1rem;
+    transition: 0.3s;
+}
+
+.new-expense button.action__cancel {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.new-expense button:hover,
+.new-expense button:active {
+    box-shadow: inset 0px 0px 10px 0px var(--dark);
+}
+
+.new-expense button.alternative {
+    color: #220131;
+    border: none;
+    background-color: transparent;
+}
+
+.new-expense button.alternative:hover,
+.new-expense button.alternative:active {
+    box-shadow: inset 0px 0px 10px 0px var(--dark);
+}

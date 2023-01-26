@@ -1,0 +1,81 @@
+.expenses {
+    background-color: #111111;
+    width: 50rem;
+    margin: auto;
+    padding: 1rem 3rem;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    margin: 1.5rem 0;
+    background-color: var(--secondary-color);
+}
+
+.expense-item__description {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.expense-item h2 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: var(--white);
+}
+
+.expense-item__price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--white);
+    padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .expenses {
+        width: 100%;
+    }
+
+    .expenses-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .expense-item {
+        width: 100%;
+        float: left;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding: 1.25rem 0.75rem;
+    }
+
+    .expense-item__description {
+        align-items: center;
+        flex-flow: column;
+        flex-direction: column;
+    }
+
+    .expense-item h2 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .expense-item__price {
+        padding-right: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 591px) {
+    .expenses-list {
+        grid-template-columns: 1fr;
+    }
+}
