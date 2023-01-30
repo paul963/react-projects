@@ -1,4 +1,4 @@
-const dummy_expenses = [
+export const dummy_expenses = [
     {
         id: 'e1',
         title: 'Paper',
